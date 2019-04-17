@@ -1,0 +1,14 @@
+# Package Information for pkg-config
+
+prefix=/home/hslu-ta/vca/trunk/trunk/externals/OpenCV3.0.0.linux.x86/build/linux-obj_rel
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir_old=${prefix}/include/opencv
+includedir_new=${prefix}/include
+
+Name: OpenCV
+Description: Open Source Computer Vision Library
+Version: 3.0.0
+Libs: -L${exec_prefix}/lib -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_adas -lopencv_bgsegm -lopencv_bioinspired -lopencv_ccalib -lopencv_datasets -lopencv_face -lopencv_latentsvm -lopencv_objdetect -lopencv_line_descriptor -lopencv_optflow -lopencv_reg -lopencv_rgbd -lopencv_saliency -lopencv_stereo -lopencv_surface_matching -lopencv_text -lopencv_tracking -lopencv_xfeatures2d -lopencv_shape -lopencv_video -lopencv_ximgproc -lopencv_calib3d -lopencv_features2d -lopencv_ml -lopencv_flann -lopencv_xobjdetect -lopencv_xphoto -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_photo -lopencv_imgproc -lopencv_core -lopencv_hal
+Libs.private: -L${exec_prefix}/share/OpenCV/3rdparty/lib -lzlib -llibjpeg -llibwebp -llibpng -llibtiff -llibjasper -lIlmImf -lstdc++ -ldl -lm -lpthread -lrt
+Cflags: -I${includedir_old} -I${includedir_new}
